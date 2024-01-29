@@ -1,10 +1,11 @@
-import { FastifyPluginCallback } from 'fastify';
-import Stripe from 'stripe';
+import { FastifyPluginCallback } from "fastify";
+import Stripe from "stripe";
 
 /**
  * @docs https://github.com/coopflow/fastify-stripe/tree/types#options
  */
-export interface FastifyStripeOptions extends Omit<Stripe.StripeConfig, "appInfo"> {
+export interface FastifyStripeOptions
+  extends Omit<Stripe.StripeConfig, "appInfo"> {
   /**
    * Stripe API Key
    *
